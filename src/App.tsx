@@ -10,18 +10,22 @@ import NotFound from './pages/NotFound';
 
 export default function App() {
   const routes = createBrowserRouter([
-    {path: '/', element: <Layout/>, children:[
-      {index: true, element: <HomePage/>},
-      {path: '/about-us', element: <AboutUs/>},
-      {path: '/contact-us', element: <ContactUs/>},
-      {path: '/services', element: <Services/>},
-      {path: '/portfolio', element: <Portfolio/>},
-      {path: '*', element: <NotFound/>}
-    ]}
+    {
+      path: '/', element: <Layout />, children: [
+        { index: true, element: <HomePage /> },
+        { path: '/about-us', element: <AboutUs /> },
+        { path: '/contact-us', element: <ContactUs /> },
+        { path: '/services', element: <Services /> },
+        { path: '/portfolio', element: <Portfolio /> },
+        { path: '*', element: <NotFound /> }
+      ]
+    }
   ])
   return (
     <>
-      <h1>Test app!</h1>
+      <h1 className="text-3xl font-bold underline">
+        Hello world!
+      </h1>
       <RouterProvider router={routes} />
     </>
   )
