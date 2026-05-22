@@ -7,6 +7,14 @@ import ContactUs from './pages/ContactUs';
 import Services from './pages/Services';
 import Portfolio from './pages/Portfolio';
 import NotFound from './pages/NotFound';
+import './styles/globals.css'
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "./components/ui/card"
 
 export default function App() {
   const routes = createBrowserRouter([
@@ -26,6 +34,17 @@ export default function App() {
       <h1 className="text-3xl font-bold underline">
         Hello world!
       </h1>
+      <Card className="max-w-sm">
+      <CardHeader>
+        <CardTitle>Project Overview</CardTitle>
+        <CardDescription>
+          Track progress and recent activity for your Vite app.
+        </CardDescription>
+      </CardHeader>
+      <CardContent>
+        Your design system is ready. Start building your next component.
+      </CardContent>
+    </Card>
       <RouterProvider router={routes} />
     </>
   )
