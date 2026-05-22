@@ -20,10 +20,12 @@ export default function NavbarComponent() {
         <header className="sticky top-0 z-40 border-b border-slate-800 bg-slate-950 backdrop-blur-sm">
             <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
                 {/* Logo */}
-                <Link to="/" className="flex items-center gap-2 text-lg font-semibold text-slate-50 hover:text-slate-200 transition">
-                    <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-slate-800 text-sm font-bold text-slate-50">
-                        F
-                    </div>
+                <Link to="/" className="flex items-center gap-3 text-lg font-semibold text-slate-50 hover:text-slate-200 transition">
+                    <img
+                        src="/favicon.svg"
+                        alt="Fratelanza logo"
+                        className="h-9 w-9 rounded-lg bg-slate-950 p-1"
+                    />
                     <span>Fratelanza</span>
                 </Link>
 

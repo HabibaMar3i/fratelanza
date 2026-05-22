@@ -42,10 +42,12 @@ export default function Footer() {
                     {/* Logo & Description */}
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
                         <div className="md:col-span-1">
-                            <Link to="/" className="inline-flex items-center gap-2 text-lg font-semibold text-white hover:text-cyan-400 transition mb-4">
-                                <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-linear-to-br from-blue-500 to-cyan-500 text-sm font-bold">
-                                    F
-                                </div>
+                            <Link to="/" className="inline-flex items-center gap-3 text-lg font-semibold text-white hover:text-cyan-400 transition mb-4">
+                                <img
+                                    src="/favicon.svg"
+                                    alt="Fratelanza logo"
+                                    className="h-9 w-9 rounded-lg bg-slate-900 p-1"
+                                />
                                 <span>Fratelanza</span>
                             </Link>
                             <p className="text-sm text-slate-400 leading-relaxed">
