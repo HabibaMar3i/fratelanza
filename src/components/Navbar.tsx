@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { Button } from './ui/button'
 import { cn } from '#lib/utils'
 
@@ -12,6 +12,7 @@ const navigation = [
 
 export default function NavbarComponent() {
     const [menuOpen, setMenuOpen] = useState(false)
+    const location = useLocation()
 
     const toggleMenu = () => setMenuOpen(prev => !prev)
     const closeMenu = () => setMenuOpen(false)
@@ -31,15 +32,24 @@ export default function NavbarComponent() {
 
                 {/* Desktop Navigation */}
                 <nav className="hidden lg:flex items-center gap-1">
-                    {navigation.map((item) => (
-                        <Link
-                            key={item.href}
-                            to={item.href}
-                            className="px-3 py-2 text-sm font-medium text-slate-200 hover:text-slate-50 hover:bg-slate-800 rounded-lg transition"
-                        >
-                            {item.label}
-                        </Link>
-                    ))}
+                    {navigation.map((item) => {
+                        const isActive = location.pathname === item.href
+                        return (
+                            <Link
+                                key={item.href}
+                                to={item.href}
+                                aria-current={isActive ? 'page' : undefined}
+                                className={cn(
+                                    'px-3 py-2 text-sm font-medium rounded-lg transition',
+                                    isActive
+                                        ? 'bg-slate-800 text-white'
+                                        : 'text-slate-200 hover:text-slate-50 hover:bg-slate-800'
+                                )}
+                            >
+                                {item.label}
+                            </Link>
+                        )
+                    })}
                 </nav>
 
                 {/* Desktop CTA */}
@@ -71,16 +81,25 @@ export default function NavbarComponent() {
                 menuOpen ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'
             )}>
                 <div className="px-4 py-4 space-y-2">
-                    {navigation.map((item) => (
-                        <Link
-                            key={item.href}
-                            to={item.href}
-                            onClick={closeMenu}
-                            className="block px-4 py-2 text-sm font-medium text-slate-200 hover:text-slate-50 hover:bg-slate-800 rounded-lg transition"
-                        >
-                            {item.label}
-                        </Link>
-                    ))}
+                    {navigation.map((item) => {
+                        const isActive = location.pathname === item.href
+                        return (
+                            <Link
+                                key={item.href}
+                                to={item.href}
+                                onClick={closeMenu}
+                                aria-current={isActive ? 'page' : undefined}
+                                className={cn(
+                                    'block px-4 py-2 text-sm font-medium rounded-lg transition',
+                                    isActive
+                                        ? 'bg-slate-800 text-white'
+                                        : 'text-slate-200 hover:text-slate-50 hover:bg-slate-800'
+                                )}
+                            >
+                                {item.label}
+                            </Link>
+                        )
+                    })}
                     <Button asChild className="w-full mt-2 rounded-full bg-slate-900 text-slate-50 hover:bg-slate-800 border border-slate-700 font-semibold">
                         <Link to="/contact-us" onClick={closeMenu}>Get in Touch</Link>
                     </Button>
