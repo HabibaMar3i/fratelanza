@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="70" y="70" width="1060" height="490" rx="48" fill="rgba(255,255,255,0.08)"/>
+  <text x="600" y="270" fill="#ffffff" font-family="Inter, sans-serif" font-size="72" font-weight="700" text-anchor="middle">Fratelanza</text>
+  <text x="600" y="340" fill="#e0f2fe" font-family="Inter, sans-serif" font-size="34" text-anchor="middle">Digital product design, web apps, mobile apps & AI solutions</text>
+  <text x="600" y="420" fill="#cfe8ff" font-family="Inter, sans-serif" font-size="24" text-anchor="middle">Cairo-based technology agency for ambitious businesses</text>
+</svg>
