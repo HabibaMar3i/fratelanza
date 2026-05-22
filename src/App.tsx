@@ -8,6 +8,8 @@ import Services from './pages/Services';
 import Portfolio from './pages/Portfolio';
 import NotFound from './pages/NotFound';
 import './styles/globals.css'
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 import {
   Card,
   CardContent,
@@ -32,6 +34,7 @@ export default function App() {
   return (
     <>
       <h1 className="text-3xl font-bold underline">
+        <i className="fa-solid fa-house"></i>
         Hello world!
       </h1>
       <Card className="max-w-sm">
