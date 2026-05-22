@@ -37,17 +37,22 @@ export default function App() {
         <i className="fa-solid fa-house"></i>
         Hello world!
       </h1>
+      <div>
+        <h1 data-aos="fade-up">Welcome</h1>
+        <p data-aos="fade-left" data-aos-delay="200">Delayed fade</p>
+        <button data-aos="flip-left" data-aos-duration="1500">Click</button>
+      </div>
       <Card className="max-w-sm">
-      <CardHeader>
-        <CardTitle>Project Overview</CardTitle>
-        <CardDescription>
-          Track progress and recent activity for your Vite app.
-        </CardDescription>
-      </CardHeader>
-      <CardContent>
-        Your design system is ready. Start building your next component.
-      </CardContent>
-    </Card>
+        <CardHeader>
+          <CardTitle>Project Overview</CardTitle>
+          <CardDescription>
+            Track progress and recent activity for your Vite app.
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          Your design system is ready. Start building your next component.
+        </CardContent>
+      </Card>
       <RouterProvider router={routes} />
     </>
   )
