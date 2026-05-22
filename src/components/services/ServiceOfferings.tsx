@@ -37,8 +37,8 @@ export default function ServiceOfferings() {
             <div className="absolute right-0 bottom-0 hidden h-80 w-80 rounded-full bg-blue-200/30 blur-3xl lg:block" />
 
             <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-                <div className="text-center mb-16">
-                    <Badge className="bg-blue-600 text-white mb-4 px-7 py-2 text-sm font-semibold rounded-full">
+                <div className="text-center mb-16" data-aos="fade-up" data-aos-delay="100">
+                    <Badge className="bg-blue-600 text-white mb-4 px-7 py-2 text-sm font-semibold rounded-full" data-aos="fade-down" data-aos-delay="150">
                         What we do
                     </Badge>
                     <h2 className="text-3xl font-bold text-slate-900 sm:text-4xl lg:text-5xl">

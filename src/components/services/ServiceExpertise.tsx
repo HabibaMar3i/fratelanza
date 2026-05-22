@@ -21,11 +21,11 @@ const expertise = [
 
 export default function ServiceExpertise() {
     return (
-        <section className="relative py-20 bg-white overflow-hidden">
+        <section className="relative py-20 bg-white overflow-hidden" data-aos="fade-up">
             <div className="absolute top-10 right-0 hidden h-80 w-80 rounded-full bg-cyan-200/20 blur-3xl lg:block" />
             <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
                 <div className="grid gap-12 lg:grid-cols-[1.3fr_1fr] lg:items-center">
-                    <div>
+                    <div data-aos="fade-right" data-aos-delay="100">
                         <Badge className="bg-linear-to-r from-blue-600 to-cyan-600 mb-4 px-7 py-2 text-sm font-semibold text-white rounded-full">
                             Expertise
                         </Badge>
@@ -53,7 +53,7 @@ export default function ServiceExpertise() {
                         </div>
                     </div>
 
-                    <div className="overflow-hidden rounded-3xl shadow-2xl">
+                    <div className="overflow-hidden rounded-3xl shadow-2xl" data-aos="fade-left" data-aos-delay="200">
                         <img
                             src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80"
                             alt="Team meeting and planning"

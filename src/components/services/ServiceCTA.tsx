@@ -4,7 +4,7 @@ import { Card } from '../ui/card'
 
 export default function ServiceCTA() {
     return (
-        <section className="relative py-20 bg-linear-to-r from-blue-900 to-cyan-600 text-white overflow-hidden">
+        <section className="relative py-20 bg-linear-to-r from-blue-900 to-cyan-600 text-white overflow-hidden" data-aos="fade-up">
             <div className="absolute inset-0 opacity-20">
                 <img
                     src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80"
@@ -14,7 +14,7 @@ export default function ServiceCTA() {
             </div>
             <div className="absolute inset-0 bg-slate-950/60" />
             <div className="relative mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-                <Card className="border-0 bg-white/10 p-10 shadow-2xl backdrop-blur-xl">
+                <Card className="border-0 bg-white/10 p-10 shadow-2xl backdrop-blur-xl" data-aos="zoom-in" data-aos-delay="150">
                     <div className="text-center">
                         <h2 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
                             Ready to start your next digital transformation?
