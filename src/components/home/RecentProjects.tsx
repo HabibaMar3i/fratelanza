@@ -9,7 +9,7 @@ const projects = [
         title: 'E-Commerce Platform',
         category: 'Web Development',
         description: 'Full-stack e-commerce solution with payment integration and inventory management.',
-        image: 'https://images.unsplash.com/photo-1460925895917-adf4e565db6d?w=500&h=300&fit=crop',
+        image: 'https://images.unsplash.com/photo-1542744095-291d1f67b221?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=500&h=300&fit=crop',
         tags: ['React', 'Node.js', 'MongoDB'],
     },
     {
@@ -17,7 +17,7 @@ const projects = [
         title: 'Mobile Banking App',
         category: 'Mobile Development',
         description: 'Secure mobile banking application with real-time transactions and analytics.',
-        image: 'https://images.unsplash.com/photo-1512941691920-25bdb75fbed0?w=500&h=300&fit=crop',
+        image: 'https://images.unsplash.com/photo-1609921141835-710b7fa6e438?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=500&h=300&fit=crop',
         tags: ['React Native', 'Firebase', 'iOS/Android'],
     },
     {
