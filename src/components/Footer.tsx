@@ -137,7 +137,7 @@ export default function Footer() {
                                 Phone
                             </p>
                             <a href="tel:01033316088" className="text-lg font-semibold text-white hover:text-cyan-400 transition">
-                                +20 (0) 103 331 6088
+                                +(20)1033316088
                             </a>
                         </div>
                         <div>

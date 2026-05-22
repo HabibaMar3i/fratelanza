@@ -70,7 +70,7 @@ export default function CTASection() {
                         <div className="flex items-center gap-2 text-slate-600">
                             <i className="fas fa-phone text-blue-600" />
                             <a href="tel:01033316088" className="hover:text-blue-600 transition">
-                                +20 (0) 103 331 6088
+                                +(20)1033316088
                             </a>
                         </div>
                         <div className="hidden sm:block w-1 h-1 rounded-full bg-slate-300" />
