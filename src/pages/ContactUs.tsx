@@ -1,5 +1,15 @@
+import ContactHero from '#components/contact/ContactHero'
+import ContactOverview from '#components/contact/ContactOverview'
+import ContactForm from '#components/contact/ContactForm'
+import ContactCTA from '#components/contact/ContactCTA'
+
 export default function ContactUs() {
-    return <div>
-        <h1>Test Contact Us</h1>
-    </div>;
+    return (
+        <div>
+            <ContactHero />
+            <ContactOverview />
+            <ContactForm />
+            <ContactCTA />
+        </div>
+    )
 }
