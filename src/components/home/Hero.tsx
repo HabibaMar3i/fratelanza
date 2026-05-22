@@ -13,7 +13,7 @@ export default function Hero() {
             <div className="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12 text-center">
                 {/* Badge */}
                 <div data-aos="fade-down" className="flex justify-center mb-8">
-                    <Badge variant="outline" className="bg-linear-to-r from-blue-800 to-cyan-500 border-blue-300 text-transparent bg-clip-text px-4 py-2 text-sm font-semibold">
+                    <Badge variant="outline" className="bg-linear-to-r from-blue-800 to-cyan-500 border-blue-300 text-transparent bg-clip-text px-8 py-3 text-sm font-bold">
                         <i className="fas fa-rocket mr-2 text-blue-600" />Digital Solutions for Growth
                     </Badge>
                 </div>

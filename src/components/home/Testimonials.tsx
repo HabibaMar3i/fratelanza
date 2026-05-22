@@ -38,7 +38,7 @@ export default function Testimonials() {
             <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
                 {/* Section Header */}
                 <div data-aos="fade-up" className="text-center mb-16">
-                    <Badge variant="default" className="bg-linear-to-r from-blue-600 to-cyan-600 mb-4 inline-block">
+                    <Badge className="bg-linear-to-r from-blue-600 to-cyan-600 mb-6 px-8 py-3 text-sm font-bold rounded-full">
                         Client Stories
                     </Badge>
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
