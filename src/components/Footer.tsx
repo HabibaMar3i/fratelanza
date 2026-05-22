@@ -34,7 +34,7 @@ export default function Footer() {
     return (
         <footer className="relative bg-slate-950 text-slate-200 overflow-hidden">
             {/* Decorative gradient */}
-            <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-blue-600/10 to-cyan-600/10 rounded-full blur-3xl opacity-50 pointer-events-none" />
+            <div className="absolute top-0 right-0 w-96 h-96 bg-linear-to-br from-blue-600/10 to-cyan-600/10 rounded-full blur-3xl opacity-50 pointer-events-none" />
 
             <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
                 {/* Main Footer */}
@@ -43,7 +43,7 @@ export default function Footer() {
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
                         <div className="md:col-span-1">
                             <Link to="/" className="inline-flex items-center gap-2 text-lg font-semibold text-white hover:text-cyan-400 transition mb-4">
-                                <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-blue-500 to-cyan-500 text-sm font-bold">
+                                <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-linear-to-br from-blue-500 to-cyan-500 text-sm font-bold">
                                     F
                                 </div>
                                 <span>Fratelanza</span>
@@ -58,7 +58,7 @@ export default function Footer() {
                                         key={index}
                                         href={social.href}
                                         aria-label={social.label}
-                                        className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-slate-800 text-slate-400 hover:bg-gradient-to-br hover:from-blue-600 hover:to-cyan-600 hover:text-white transition-all duration-300"
+                                        className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-slate-800 text-slate-400 hover:bg-linear-to-br hover:from-blue-600 hover:to-cyan-600 hover:text-white transition-all duration-300"
                                     >
                                         <i className={`${social.icon} text-lg`} />
                                     </a>
