@@ -1,73 +1,99 @@
-# React + TypeScript + Vite
+# Fratelanza
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Fratelanza — a small React + Vite + TypeScript site showcasing a digital agency UI built with Tailwind CSS and shadcn-style components.
 
-Currently, two official plugins are available:
+## Features
+- Clean, responsive UI with Tailwind CSS
+- Shadcn-style UI primitives (Button, Card, Badge, Input, Select, Textarea, Label)
+- AOS scroll animations
+- Routing via `react-router-dom`
+- SEO meta tags and social preview (`index.html` + `public/og-image.svg`)
+- Accessible navigation with active state and a back-to-top button
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Quick start
+Requirements: Node.js 18+ and npm.
 
-## React Compiler
+Install dependencies:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Run locally:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
 ```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+Preview build:
+
+```bash
+npm run preview
+```
+
+## Project structure (key files)
+- `index.html` — app entry/SEO metadata
+- `src/main.tsx` — app bootstrap and AOS init
+- `src/App.tsx` — router and layout
+- `src/layouts/Layout.tsx` — global layout (Navbar, Footer, BackToTop)
+- `src/components` — UI components and page sections
+- `public/` — favicon and social preview image
+
+## Notes
+- The contact form uses shadcn form primitives from `src/components/ui`.
+- Logo and social preview assets are in `public/`.
+
+
+## Pages
+An overview of the main routes and what they contain:
+
+- `Home` (`/`) — composed of `Hero`, `Services` overview, `WhyChooseUs`, `RecentProjects`, `Testimonials`, and a CTA section.
+- `About Us` (`/about-us`) — company story, values and team sections.
+- `Services` (`/services`) — detailed services and offerings.
+- `Portfolio` (`/portfolio`) — recent projects and case studies.
+- `Contact` (`/contact-us`) — contact overview, cards and the contact form.
+- `Not Found` (`*`) — fallback page when route not found.
+
+## Notable components
+- `src/components/Navbar.tsx` — site navigation with active-route highlighting.
+- `src/components/Footer.tsx` — footer with contact details and links.
+- `src/components/contact/ContactForm.tsx` — contact form built with shadcn primitives.
+- `src/components/ui/*` — shared UI primitives (Button, Card, Badge, Input, Select, Textarea, Label, Tabs).
+- `src/components/BackToTop.tsx` — floating back-to-top button.
+
+## Major packages used
+Key dependencies (see `package.json` for full list):
+
+- React & routing: `react`, `react-dom`, `react-router-dom`
+- Build & dev: `vite`, `typescript`, `@vitejs/plugin-react`
+- Styling: `tailwindcss`, `@tailwindcss/vite`, `tailwind-merge`, `tw-animate-css`
+- UI primitives & utilities: `shadcn`, `radix-ui`, `class-variance-authority`, `clsx`, `tailwind-merge`
+- Icons & fonts: `@fortawesome/fontawesome-free`, `@hugeicons/react`, `@fontsource-variable/inter`, `lucide-react`
+- Animations: `aos`
+
+## Deployment notes
+- This is a static SPA output by Vite. Build with:
+
+```bash
+npm run build
+```
+
+and serve the `dist/` directory on a static host (Vercel, Netlify, S3 + CloudFront, etc.).
+
+## Contributing
+- Feel free to open issues or PRs. For local development:
+
+```bash
+npm install
+npm run dev
+```
+
+Follow the existing code style and Tailwind utility patterns.
+
+---
